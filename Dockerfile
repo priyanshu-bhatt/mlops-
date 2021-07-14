@@ -2,11 +2,11 @@ FROM  centos
 
 RUN  yum install python3 -y
 
-RUN  yum install numpy -y
+RUN  pip3 install numpy -y
 
-RUN  install joblib
+RUN  pip3 install joblib
 
-RUN install scikit-learn -y
+RUN  pip3 install scikit-learn -y
 
 COPY  model.pk1  /
 
